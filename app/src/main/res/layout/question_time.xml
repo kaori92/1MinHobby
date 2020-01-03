@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                      android:orientation="vertical"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:layout_margin="@dimen/margin"
+        >
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/text_size"
+                    android:text="How much time at once do you have for hobbies?"
+                    android:layout_margin="@dimen/margin"
+            ></TextView>
+
+            <Button android:id="@+id/littleTimeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Little: less than an hour"
+                    android:textSize="@dimen/text_size"
+                    android:onClick="passValue"
+                    android:tag="little"
+            />
+            <Button android:id="@+id/mediumTimeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Medium: about an hour"
+                    android:textSize="@dimen/text_size"
+                    android:onClick="medium"
+            />
+            <Button android:id="@+id/lotOfTimeButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="A lot: more than an hour"
+                    android:textSize="@dimen/text_size"
+                    android:onClick="passValue"
+                    android:tag="lot"
+            />
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>

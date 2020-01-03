@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true">
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_margin="@dimen/margin"
+        >
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textSize="@dimen/text_size"
+                    android:text="What type of hobby would you be most interested in?"
+                    android:layout_margin="@dimen/margin"
+            >
+            </TextView>
+
+            <Button android:id="@+id/simpleButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Simple everyday hobby"
+                    android:textSize="@dimen/text_size"
+                    android:onClick="passValue"
+                    android:tag="simple"
+            />
+            <Button android:id="@+id/practicalButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Practical home hobby"
+                    android:textSize="@dimen/text_size"
+                    android:onClick="passValue"
+                    android:tag="practical"
+            />
+            <Button android:id="@+id/sportsButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sport hobby"
+                    android:textSize="@dimen/text_size"
+                    android:onClick="passValue"
+                    android:tag="sports"
+            />
+            <Button android:id="@+id/creativePhysicalButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Creative hobby with a physical result"
+                    android:textSize="@dimen/text_size"
+                    android:onClick="passValue"
+                    android:tag="creativePhysical"
+            />
+            <Button android:id="@+id/creativeNonphysicalButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Creative hobby with non-physical result"
+                    android:textSize="@dimen/text_size"
+                    android:onClick="passValue"
+                    android:tag="creativeNonPhysical"
+            />
+            <Button android:id="@+id/brainButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hobby training your brain"
+                    android:textSize="@dimen/text_size"
+                    android:onClick="passValue"
+                    android:tag="brain"
+            />
+            <Button android:id="@+id/seasonalButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Occasional or seasonal hobby"
+                    android:textSize="@dimen/text_size"
+                    android:onClick="passValue"
+                    android:tag="seasonal"
+            />
+            <Button android:id="@+id/adventureButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Adventurous hobby"
+                    android:textSize="@dimen/text_size"
+                    android:onClick="passValue"
+                    android:tag="adventure"
+            />
+            <Button android:id="@+id/adrenalineButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Hobby for adrenaline junkies"
+                    android:textSize="@dimen/text_size"
+                    android:onClick="passValue"
+                    android:tag="adrenaline"
+            />
+            <Button android:id="@+id/atypicalButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Atypical hobby"
+                    android:textSize="@dimen/text_size"
+                    android:onClick="passValue"
+                    android:tag="atypical"
+            />
+        </LinearLayout>
+    </FrameLayout>
+</ScrollView>
