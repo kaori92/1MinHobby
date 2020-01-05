@@ -19,10 +19,10 @@ class HobbyResultActivity : Activity() {
         setContentView(R.layout.hobby_result)
 
 //        val filteredHobbies = matchHobbies()
-        val filteredHobbies = listOf(Hobby(1, "name", "a", "a", "a"))
+        val filteredHobbies = listOf("a")
 
         viewManager = LinearLayoutManager(this)
-        viewAdapter = HobbiesAdapter(filteredHobbies, this)
+        viewAdapter = HobbyAdapter( this, filteredHobbies)
 
         recyclerView = findViewById<RecyclerView>(R.id.hobbies_recycler_view).apply {
             setHasFixedSize(true)
