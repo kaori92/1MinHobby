@@ -8,7 +8,6 @@ import com.example.new1minhobby.HobbyMatcher
 import com.example.new1minhobby.R
 import com.example.new1minhobby.models.Hobby
 
-
 class HobbyResultActivity : Activity() {
 
     private lateinit var recyclerView: RecyclerView
@@ -19,24 +18,17 @@ class HobbyResultActivity : Activity() {
         super<Activity>.onCreate(savedInstanceState)
         setContentView(R.layout.hobby_result)
 
-        val filteredHobbies = matchHobbies()
+//        val filteredHobbies = matchHobbies()
+        val filteredHobbies = listOf(Hobby(1, "name", "a", "a", "a"))
 
         viewManager = LinearLayoutManager(this)
-        viewAdapter = HobbiesAdapter(filteredHobbies)
+        viewAdapter = HobbiesAdapter(filteredHobbies, this)
 
         recyclerView = findViewById<RecyclerView>(R.id.hobbies_recycler_view).apply {
-            // use this setting to improve performance if you know that changes
-            // in content do not change the layout size of the RecyclerView
             setHasFixedSize(true)
-
-            // use a linear layout manager
             layoutManager = viewManager
-
-            // specify an viewAdapter (see also next example)
             adapter = viewAdapter
-
         }
-
     }
 
     private fun matchHobbies(): List<Hobby>{
