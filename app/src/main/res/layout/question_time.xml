@@ -2,54 +2,45 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:background="@drawable/background">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:showDividers="middle"
+            android:divider="@drawable/empty_tall_divider"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="@dimen/margin"
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin"
-                android:gravity="center_horizontal"
+                style="@style/TextViewStyle"
                 android:text="How much time at once do you have for hobbies?"
-                android:textSize="@dimen/text_size"></TextView>
+            ></TextView>
 
             <Button
                 android:id="@+id/littleTimeButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_style"
-                android:onClick="passValue"
+                style="@style/ButtonStyle"
                 android:tag="low"
                 android:text="Little: less than an hour"
-                android:textSize="@dimen/text_size" />
+                />
 
             <Button
                 android:id="@+id/mediumTimeButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_style"
-                android:onClick="medium"
+                style="@style/ButtonStyle"
                 android:text="Medium: about an hour"
-                android:textSize="@dimen/text_size" />
+                />
 
             <Button
                 android:id="@+id/lotOfTimeButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_style"
-                android:onClick="passValue"
+                style="@style/ButtonStyle"
                 android:tag="high"
                 android:text="A lot: more than an hour"
-                android:textSize="@dimen/text_size" />
+                />
         </LinearLayout>
     </FrameLayout>
 </ScrollView>

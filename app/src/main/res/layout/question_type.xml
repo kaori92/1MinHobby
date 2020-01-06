@@ -2,7 +2,8 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true">
+    android:fillViewport="true"
+    android:background="@drawable/background">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -17,112 +18,76 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/margin"
-                android:gravity="center_horizontal"
-                android:text="What type of hobby would you be most interested in?"
-                android:textSize="@dimen/text_size"></TextView>
+                style="@style/TextViewStyle"
+                android:text="What type of hobby sounds interesting?"
+            ></TextView>
 
             <Button
                 android:id="@+id/simpleButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_style"
-                android:onClick="passValue"
+                style="@style/ButtonStyle"
                 android:tag="Simple everyday hobby"
-                android:text="Simple everyday hobby"
-                android:textSize="@dimen/text_size" />
+                android:text="Simple everyday hobby" />
 
             <Button
                 android:id="@+id/practicalButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_style"
-                android:onClick="passValue"
+                style="@style/ButtonStyle"
                 android:tag="Practical home hobby"
                 android:text="Practical home hobby"
-                android:textSize="@dimen/text_size" />
+                />
 
             <Button
                 android:id="@+id/sportsButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_style"
-                android:onClick="passValue"
+                style="@style/ButtonStyle"
                 android:tag="Sport hobby"
                 android:text="Sport hobby"
-                android:textSize="@dimen/text_size" />
+                />
 
             <Button
                 android:id="@+id/creativePhysicalButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_style"
-                android:onClick="passValue"
+                style="@style/ButtonStyle"
                 android:tag="Creative hobby with a physical result"
-                android:text="Creative hobby with a physical result"
-                android:textSize="@dimen/text_size" />
+                android:text="Creative hobby with a physical result" />
 
             <Button
                 android:id="@+id/creativeNonphysicalButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_style"
-                android:onClick="passValue"
+                style="@style/ButtonStyle"
                 android:tag="Creative hobby with non-physical result"
                 android:text="Creative hobby with non-physical result"
-                android:textSize="@dimen/text_size" />
+                />
 
             <Button
                 android:id="@+id/brainButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_style"
-                android:onClick="passValue"
+                style="@style/ButtonStyle"
                 android:tag="Hobby training your brain"
                 android:text="Hobby training your brain"
-                android:textSize="@dimen/text_size" />
+                />
 
             <Button
                 android:id="@+id/seasonalButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_style"
-                android:onClick="passValue"
+                style="@style/ButtonStyle"
                 android:tag="Occasional or seasonal hobby"
                 android:text="Occasional or seasonal hobby"
-                android:textSize="@dimen/text_size" />
+/>
 
             <Button
                 android:id="@+id/adventureButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_style"
-                android:onClick="passValue"
+                style="@style/ButtonStyle"
                 android:tag="Adventurous hobby"
                 android:text="Adventurous hobby"
-                android:textSize="@dimen/text_size" />
+                />
 
             <Button
                 android:id="@+id/adrenalineButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_style"
-                android:onClick="passValue"
+                style="@style/ButtonStyle"
                 android:tag="Hobby for adrenaline junkies"
                 android:text="Hobby for adrenaline junkies"
-                android:textSize="@dimen/text_size" />
+                />
 
             <Button
                 android:id="@+id/atypicalButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/button_style"
-                android:onClick="passValue"
+                style="@style/ButtonStyle"
                 android:tag="Atypical hobby"
-                android:text="Atypical hobby"
-                android:textSize="@dimen/text_size" />
+                android:text="Atypical hobby" />
         </LinearLayout>
     </FrameLayout>
 </ScrollView>
