@@ -8,13 +8,14 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
+import com.example.new1minhobby.models.Hobby
 
 class HobbyAdapter internal constructor(
     context: Context?,
-    data: List<String>
+    data: List<Hobby>
 ) :
     RecyclerView.Adapter<ViewHolder>() {
-    private val data: List<String>
+    private val data: List<Hobby>
     private val inflater: LayoutInflater = LayoutInflater.from(context)
     private var clickListener: ItemClickListener? = null
 
@@ -40,7 +41,7 @@ class HobbyAdapter internal constructor(
         }
     }
 
-    fun getItem(id: Int): String {
+    fun getItem(id: Int): Hobby {
         return data[id]
     }
 
@@ -58,7 +59,7 @@ class HobbyAdapter internal constructor(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val animal = data[position]
-        (holder as MyViewHolder).myTextView.text = animal
+        val hobby = data[position]
+        (holder as MyViewHolder).myTextView.text = hobby.name
     }
 }

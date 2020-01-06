@@ -14,12 +14,11 @@ class HobbyResultActivity : Activity() {
     private lateinit var viewAdapter: RecyclerView.Adapter<*>
     private lateinit var viewManager: RecyclerView.LayoutManager
 
-    protected override fun onCreate(savedInstanceState : Bundle?) {
-        super<Activity>.onCreate(savedInstanceState)
+    override fun onCreate(savedInstanceState : Bundle?) {
+        super.onCreate(savedInstanceState)
         setContentView(R.layout.hobby_result)
 
-//        val filteredHobbies = matchHobbies()
-        val filteredHobbies = listOf("a")
+        val filteredHobbies = matchHobbies()
 
         viewManager = LinearLayoutManager(this)
         viewAdapter = HobbyAdapter( this, filteredHobbies)

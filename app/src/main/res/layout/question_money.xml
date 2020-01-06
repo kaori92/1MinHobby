@@ -1,48 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:fillViewport="true">
-    <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                      android:orientation="vertical"
-                      android:layout_width="match_parent"
-                      android:layout_height="match_parent"
-                      android:layout_margin="@dimen/margin">
+            android:layout_margin="@dimen/margin"
+            android:orientation="vertical">
+
             <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center_horizontal"
-                    android:textSize="@dimen/text_size"
-                    android:text="How much money can you spend on your hobby?"
-                    android:layout_margin="@dimen/margin">
-            </TextView>
-            <Button android:id="@+id/freeButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="None"
-                    android:textSize="@dimen/text_size"
-                    android:onClick="passValue"
-                    android:tag="low"
-            />
-            <Button android:id="@+id/cheapButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Some"
-                    android:textSize="@dimen/text_size"
-                    android:onClick="passValue"
-                    android:tag="medium"
-            />
-            <Button android:id="@+id/expensiveButton"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Any amount"
-                    android:textSize="@dimen/text_size"
-                    android:onClick="passValue"
-                    android:tag="high"
-            />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin"
+                android:gravity="center_horizontal"
+                android:text="How much money can you spend on your hobby?"
+                android:textSize="@dimen/text_size"></TextView>
+
+            <Button
+                android:id="@+id/freeButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:onClick="passValue"
+                android:tag="low"
+                android:text="None"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/cheapButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:onClick="passValue"
+                android:tag="medium"
+                android:text="Some"
+                android:textSize="@dimen/text_size" />
+
+            <Button
+                android:id="@+id/expensiveButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_style"
+                android:onClick="passValue"
+                android:tag="high"
+                android:text="Any amount"
+                android:textSize="@dimen/text_size" />
         </LinearLayout>
     </FrameLayout>
 </ScrollView>

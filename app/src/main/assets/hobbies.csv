@@ -1,0 +1,119 @@
+name,category,time,price
+Reading,Simple everyday hobby,medium,medium
+Photography,Simple everyday hobby,medium,medium
+Computer games,Simple everyday hobby,high,high
+Playing a musical instrument,Simple everyday hobby,high,high
+Coloring books,Simple everyday hobby,medium,medium
+Watching movies or tv shows,Simple everyday hobby,medium,low
+Writing letters,Simple everyday hobby,low,low
+Listening to music, podcasts or audiobooks,Simple everyday hobby,low,low
+Walking,Simple everyday hobby,medium,low
+Singing,Simple everyday hobby,medium,low
+Cooking,Practical home hobby,high,medium
+Beekeeping,Practical home hobby,high,medium
+Makeup,Practical home hobby,low,medium
+Minimalism or zero waste or other optimizations,Practical home hobby,medium,low
+Coffee or tea brewing,Practical home hobby,low,low
+Baking,Practical home hobby,high,medium
+Skincare,Practical home hobby,medium,medium
+Renovations,Practical home hobby,high,high
+Making beer or wine,Practical home hobby,high,medium
+Making preserves,Practical home hobby,high,medium
+Cleaning,Practical home hobby,high,low
+Upcycling,Practical home hobby,high,high
+Gardening,Practical home hobby,medium,medium
+Healthy eating,Practical home hobby,medium,medium
+Herbology,Practical home hobby,medium,low
+Running,Sports,high,low
+Artistic gymnastics,Sports,high,high
+Golf,Sports,high,high
+Horseback riding,Sports,high,high
+Rollerblading,Sports,high,high
+Roolerskating,Sports,high,high
+Skateboarding,Sports,high,high
+Biking,Sports,high,medium
+Bowling,Sports,medium,high
+Yoga,Sports,medium,low
+Pilates,Sports,medium,low
+Ping-pong,Sports,medium,low
+Tenis,Sports,high,high
+Badminton,Sports,medium,medium
+Crossfit,Sports,high,medium
+Weightlifting,Sports,high,medium
+Martial arts,Sports,high,medium
+Water sports,Sports,high,high
+Team sports,Sports,high,medium
+Winter sports,Sports,high,high
+Archery,Sports,high,high
+Dancing,Sports,medium,low
+Fishing,Sports,high,medium
+Carving,Creative hobby with a physical result,high,high
+Ceramics,Creative hobby with a physical result,high,high
+Decoupage,Creative hobby with a physical result,high,high
+Cake decoration,Creative hobby with a physical result,high,medium
+Knitting,Creative hobby with a physical result,high,low
+DIY clothes transformation,Creative hobby with a physical result,medium,low
+Felting,Creative hobby with a physical result,medium,medium
+Floristry,Creative hobby with a physical result,high,medium
+Embroidery,Creative hobby with a physical result,medium,medium
+Calligraphy,Creative hobby with a physical result,low,low
+Macramé,Creative hobby with a physical result,medium,low
+Painting,Creative hobby with a physical result,high,medium
+Origami,Creative hobby with a physical result,high,low
+Patchwork,Creative hobby with a physical result,high,low
+Repairs,Creative hobby with a physical result,medium,medium
+Modeling,Creative hobby with a physical result,high,high
+Acting or stand up,Creative hobby with non-physical result,high,medium
+Style analysis,Creative hobby with non-physical result,medium,low
+Graphic design,Creative hobby with non-physical result,high,low
+Blogging,Creative hobby with non-physical result,high,low
+Filming,Creative hobby with non-physical result,high,high
+Music mixing,Creative hobby with non-physical result,medium,medium
+Writing books,Creative hobby with non-physical result,high,low
+Programming,Creative hobby with non-physical result,high,high
+Photo processing,Creative hobby with non-physical result,medium,medium
+Fashion design,Creative hobby with non-physical result,medium,medium
+Interior design,Creative hobby with non-physical result,medium,high
+Billiards,Hobby training your brain,low,medium
+Snooker,Hobby training your brain,low,medium
+Chess,Hobby training your brain,low,low
+Checkers,Hobby training your brain,low,low
+Playing cards,Hobby training your brain,low,low
+Playing board games,Hobby training your brain,low,medium
+Learning foreign languages,Hobby training your brain,medium,low
+Puzzle,Hobby training your brain,medium,medium
+Crosswords,Hobby training your brain,medium,low
+Astronomy,Occasional or seasonal hobby,high,medium
+Shopping in second hands,Occasional or seasonal hobby,medium,low
+Attending concerts,Occasional or seasonal hobby,high,high
+Escape rooms,Occasional or seasonal hobby,medium,high
+Scavenger hunt,Occasional or seasonal hobby,high,medium
+Investing,Occasional or seasonal hobby,high,high
+Watching sports,Occasional or seasonal hobby,low,low
+Volunteering,Occasional or seasonal hobby,high,low
+Food tasting,Occasional or seasonal hobby,low,high
+Urban exploring,Adventurous hobby,high,medium
+Historical reconstruction,Adventurous hobby,high,high
+Camping,Adventurous hobby,medium,low
+Geocaching,Adventurous hobby,medium,low
+Hiking mountains,Adventurous hobby,high,low
+Watching wildlife,Adventurous hobby,medium,low
+Paintball,Adventurous hobby,medium,high
+Travelling,Adventurous hobby,high,high
+Flying in wind tunnel,Hobby for adrenaline junkies,low,high
+Bungee jumping,Hobby for adrenaline junkies,low,high
+Parachute jumping,Hobby for adrenaline junkies,medium,high
+Alpine hiking,Hobby for adrenaline junkies,high,medium
+Genealogy,Atypical hobby,medium,low
+Playing darts,Atypical hobby,low,medium
+Cosplay,Atypical hobby,medium,high
+Role playing games,Atypical hobby,medium,high
+Gathering specific knowledge about something,Atypical hobby,low,low
+Collecting items,Atypical hobby,medium,high
+Manga,Atypical hobby,medium,medium
+Anime,Atypical hobby,medium,medium
+Postcrossing,Atypical hobby,low,low
+Scent recognition,Atypical hobby,low,medium
+Online learning,Atypical hobby,medium,low
+Learning about philosophy or religion,Atypical hobby,low,low
+Juggling,Atypical hobby,low,low
