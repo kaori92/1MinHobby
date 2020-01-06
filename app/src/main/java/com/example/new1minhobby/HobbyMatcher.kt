@@ -19,16 +19,30 @@ class HobbyMatcher {
 
     fun match(allHobbies: MutableList<Hobby>): List<Hobby> {
         Log.d("TAG this", "$category $time $price")
-        return allHobbies.filter {
+
+        var result =  allHobbies.filter {
             it.category == category && it.time == time && it.price == price
         }
+
+        if(result.isEmpty()){
+            result =  allHobbies.filter {
+                it.category == category && (it.time == time || it.price == price)
+            }
+        }
+
+        if(result.isEmpty()){
+            result =  allHobbies.filter {
+                it.category == category || it.time == time || it.price == price
+            }
+        }
+
+        return result
     }
 
     fun loadHobbies(context: Activity): MutableList<Hobby> {
         val result = mutableListOf<Hobby>()
 
-        val lineList = mutableListOf<String>()
-        val hobbies = context.application.assets.open(fileName).bufferedReader().useLines { lines ->
+        context.application.assets.open(fileName).bufferedReader().useLines { lines ->
             lines.forEach {
 
                 val values: Array<String>? = it.split(",").toTypedArray()

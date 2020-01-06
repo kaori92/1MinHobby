@@ -13,7 +13,7 @@
 
         <TextView
             style="@style/TextViewStyle"
-            android:text="Thank you! We have chosen for you:"
+            android:text="We have chosen for you:"
             ></TextView>
 
         <androidx.recyclerview.widget.RecyclerView
