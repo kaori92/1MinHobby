@@ -24,6 +24,7 @@
 
             <Button
                 android:id="@+id/simpleButton"
+                android:background="@drawable/bg_test"
                 style="@style/ButtonStyle"
                 android:tag="Simple everyday hobby"
                 android:text="Simple everyday hobby" />
