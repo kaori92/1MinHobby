@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.example.new1minhobby.models.Hobby
+import com.example.new1minhobby.data.Hobby
 
 class HobbyAdapter internal constructor(
     context: HobbyResultActivity,

@@ -2,10 +2,12 @@ package com.example.new1minhobby
 
 import android.app.Activity
 import android.util.Log
-import com.example.new1minhobby.models.Hobby
+import com.example.new1minhobby.data.Hobby
 
 class HobbyMatcher {
-    val fileName = "hobbies.csv"
+    val fileName = "hobbies.tsv"
+    val columns = 6
+    val delimiter = "\\t"
     var category: String? = null
     var time: String? = null
     var price: String? = null
@@ -45,10 +47,10 @@ class HobbyMatcher {
         context.application.assets.open(fileName).bufferedReader().useLines { lines ->
             lines.forEach {
 
-                val values: Array<String>? = it.split(",").toTypedArray()
+                val values: Array<String>? = it.split(delimiter).toTypedArray()
                 values?.let {
-                    if (it.size == 4) {
-                        val hobby = Hobby(id, it[0], it[1], it[2], it[3])
+                    if (it.size == columns) {
+                        val hobby = Hobby(id, it[0], it[1], it[2], it[3], it[4], it[5])
                         Log.d("TAG", hobby.toString())
                         result.add(hobby)
                     } else {

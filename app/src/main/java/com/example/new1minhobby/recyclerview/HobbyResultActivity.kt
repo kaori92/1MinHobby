@@ -3,13 +3,11 @@ package com.example.new1minhobby.recyclerview
 import android.app.Activity
 import android.os.Bundle
 import android.util.Log
-import android.view.View
-import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.new1minhobby.HobbyMatcher
 import com.example.new1minhobby.R
-import com.example.new1minhobby.models.Hobby
+import com.example.new1minhobby.data.Hobby
 
 class HobbyResultActivity : Activity(), HobbyAdapter.ItemClickListener {
 
