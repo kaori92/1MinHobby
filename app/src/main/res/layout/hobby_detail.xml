@@ -1,7 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:background="@drawable/background">
 
-</LinearLayout>
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin"
+        android:background="@android:color/white"
+        android:elevation="@dimen/elevation" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin">
+
+            <TextView
+                android:id="@+id/name_text_view"
+                tools:text="Cooking"
+                style="@style/BoldTextViewStyle"
+                android:layout_marginBottom="@dimen/zero_size"/>
+
+            <TextView
+                android:id="@+id/description_text_view"
+                tools:text="Cooking can be done at home"
+                style="@style/TextViewStyle"
+                android:layout_marginTop="@dimen/zero_size"
+                android:layout_marginBottom="@dimen/zero_size"
+                android:textStyle="bold"
+                android:textColor="@color/colorDarkBlue"
+                android:layout_gravity="start"
+                android:textAlignment="viewStart" />
+
+            <TextView
+                android:id="@+id/benefits_title_text_view"
+                android:text="BENEFITS"
+                style="@style/TextViewStyle"
+                android:layout_marginBottom="@dimen/zero_size"
+                android:layout_marginTop="@dimen/zero_size"
+                android:textStyle="bold"
+                android:textColor="@color/colorDarkRed"
+                android:layout_gravity="start"
+                android:textAlignment="viewStart" />
+
+            <TextView
+                android:id="@+id/benefit1_text_view"
+                tools:text=" - practical"
+                style="@style/SmallTextViewStyle" />
+
+            <TextView
+                android:id="@+id/benefit2_text_view"
+                tools:text=" - practical"
+                style="@style/SmallTextViewStyle" />
+
+            <TextView
+                android:id="@+id/benefit3_text_view"
+                tools:text=" - practical"
+                style="@style/SmallTextViewStyle"
+                android:layout_marginBottom="@dimen/margin"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</ScrollView>

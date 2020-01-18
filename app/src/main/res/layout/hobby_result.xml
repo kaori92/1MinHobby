@@ -1,27 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@drawable/background"
-    android:fillViewport="true">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <TextView
+        style="@style/TextViewStyle"
+        android:text="We have chosen for you:" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hobbies_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="@dimen/margin"
-        android:orientation="vertical">
+        android:backgroundTint="@android:color/white"
+        android:scrollbars="vertical" />
 
-        <TextView
-            style="@style/TextViewStyle"
-            android:text="We have chosen for you:"
-            ></TextView>
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/hobbies_recycler_view"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:backgroundTint="@android:color/white"
-            android:scrollbars="vertical" />
-
-    </LinearLayout>
-</ScrollView>
+</LinearLayout>

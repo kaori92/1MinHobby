@@ -4,6 +4,8 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.widget.LinearLayout
+import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.new1minhobby.HobbyMatcher
@@ -11,6 +13,7 @@ import com.example.new1minhobby.R
 import com.example.new1minhobby.data.Hobby
 import com.example.new1minhobby.recyclerview.HobbyAdapter
 import com.google.gson.Gson
+
 
 class HobbyResultActivity : Activity(),
     HobbyAdapter.ItemClickListener {
@@ -34,6 +37,7 @@ class HobbyResultActivity : Activity(),
             setHasFixedSize(true)
             layoutManager = viewManager
             adapter = viewAdapter
+
         }
     }
 

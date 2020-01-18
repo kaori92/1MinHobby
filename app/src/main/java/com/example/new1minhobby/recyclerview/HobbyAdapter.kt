@@ -16,7 +16,7 @@ class HobbyAdapter internal constructor(
     data: List<Hobby>
 ) :
     RecyclerView.Adapter<ViewHolder>() {
-    private val data: List<Hobby>
+    private val data: List<Hobby> = data
     private val inflater: LayoutInflater = LayoutInflater.from(context)
     private var clickListener: ItemClickListener? = null
     val activity = context
@@ -51,17 +51,8 @@ class HobbyAdapter internal constructor(
         return data[id]
     }
 
-    fun setClickListener(itemClickListener: ItemClickListener?) {
-        clickListener = itemClickListener
-    }
-
-    // parent activity will implement this method to respond to click events
     interface ItemClickListener {
         fun onItemClick(hobby: Hobby)
-    }
-
-    init {
-        this.data = data
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {

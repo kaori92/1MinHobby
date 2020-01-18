@@ -3,10 +3,34 @@
     <style name="TextViewStyle">
         <item name="android:textSize">@dimen/text_size</item>
         <item name="android:fontFamily">@font/didact_gothic</item>
-        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">@dimen/margin</item>
         <item name="android:gravity">center_horizontal</item>
         <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="BoldTextViewStyle">
+        <item name="android:textSize">@dimen/larger_font_size</item>
+        <item name="android:fontFamily">@font/didact_gothic</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorDarkBlue</item>
+    </style>
+
+    <style name="SmallTextViewStyle">
+        <item name="android:textSize">@dimen/smaller_font_size</item>
+        <item name="android:fontFamily">@font/didact_gothic</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/margin</item>
+        <item name="android:layout_marginRight">@dimen/margin</item>
+        <item name="android:gravity">start</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:textColor">@color/colorDarkBlue</item>
     </style>
 </resources>
