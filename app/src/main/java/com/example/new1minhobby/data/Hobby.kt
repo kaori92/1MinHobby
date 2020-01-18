@@ -1,7 +1,6 @@
 package com.example.new1minhobby.data
 
 data class Hobby (
-    val id: Int,
     val name: String,
     val category: String,
     val time: String,

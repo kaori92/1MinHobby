@@ -22,7 +22,10 @@
         <activity android:name=".activities.QuestionMoneyActivity"
             android:label="@string/app_name">
         </activity>
-        <activity android:name=".recyclerview.HobbyResultActivity"
+        <activity android:name=".activities.HobbyResultActivity"
+            android:label="@string/app_name">
+        </activity>
+        <activity android:name=".activities.HobbyDetailActivity"
             android:label="@string/app_name">
         </activity>
     </application>

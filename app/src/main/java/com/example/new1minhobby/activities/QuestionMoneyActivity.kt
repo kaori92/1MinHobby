@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import com.example.new1minhobby.R
-import com.example.new1minhobby.recyclerview.HobbyResultActivity
 
 class QuestionMoneyActivity() : Activity() {
     protected override fun onCreate(savedInstanceState : Bundle?) {

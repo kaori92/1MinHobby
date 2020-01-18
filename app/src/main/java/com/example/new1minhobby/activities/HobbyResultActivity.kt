@@ -1,6 +1,7 @@
-package com.example.new1minhobby.recyclerview
+package com.example.new1minhobby.activities
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -8,8 +9,11 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.new1minhobby.HobbyMatcher
 import com.example.new1minhobby.R
 import com.example.new1minhobby.data.Hobby
+import com.example.new1minhobby.recyclerview.HobbyAdapter
+import com.google.gson.Gson
 
-class HobbyResultActivity : Activity(), HobbyAdapter.ItemClickListener {
+class HobbyResultActivity : Activity(),
+    HobbyAdapter.ItemClickListener {
 
     private lateinit var recyclerView: RecyclerView
     private lateinit var viewAdapter: RecyclerView.Adapter<*>
@@ -23,7 +27,8 @@ class HobbyResultActivity : Activity(), HobbyAdapter.ItemClickListener {
         hobbies = matchHobbies()
 
         viewManager = LinearLayoutManager(this)
-        viewAdapter = HobbyAdapter( this, hobbies!!)
+        viewAdapter =
+            HobbyAdapter(this, hobbies!!)
 
         recyclerView = findViewById<RecyclerView>(R.id.hobbies_recycler_view).apply {
             setHasFixedSize(true)
@@ -45,5 +50,9 @@ class HobbyResultActivity : Activity(), HobbyAdapter.ItemClickListener {
 
      override fun onItemClick(hobby: Hobby) {
         Log.d("TAG123", "hobby $hobby")
+
+         val intent = Intent(this, HobbyDetailActivity::class.java)
+         intent.putExtra("hobby", Gson().toJson(hobby))
+         startActivity(intent)
     }
 }
