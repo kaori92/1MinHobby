@@ -33,9 +33,7 @@
                 android:layout_marginTop="@dimen/zero_size"
                 android:layout_marginBottom="@dimen/zero_size"
                 android:textStyle="bold"
-                android:textColor="@color/colorDarkBlue"
-                android:layout_gravity="start"
-                android:textAlignment="viewStart" />
+                android:textColor="@color/colorDarkBlue"/>
 
             <TextView
                 android:id="@+id/benefits_title_text_view"
