@@ -8,11 +8,11 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
-import com.example.new1minhobby.activities.HobbyResultActivity
+import com.example.new1minhobby.activities.HobbyListActivity
 import com.example.new1minhobby.data.Hobby
 
 class HobbyAdapter internal constructor(
-    context: HobbyResultActivity,
+    context: HobbyListActivity,
     data: List<Hobby>
 ) :
     RecyclerView.Adapter<ViewHolder>() {
@@ -30,7 +30,7 @@ class HobbyAdapter internal constructor(
         return data.size
     }
 
-    inner class MyViewHolder constructor(itemView: View, context: HobbyResultActivity) : ViewHolder(itemView),
+    inner class MyViewHolder constructor(itemView: View, context: HobbyListActivity) : ViewHolder(itemView),
         View.OnClickListener {
 
         var myTextView: TextView

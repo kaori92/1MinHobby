@@ -4,8 +4,6 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
-import android.widget.LinearLayout
-import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.new1minhobby.HobbyMatcher
@@ -15,7 +13,7 @@ import com.example.new1minhobby.recyclerview.HobbyAdapter
 import com.google.gson.Gson
 
 
-class HobbyResultActivity : Activity(),
+class HobbyListActivity : Activity(),
     HobbyAdapter.ItemClickListener {
 
     private lateinit var recyclerView: RecyclerView
@@ -25,7 +23,7 @@ class HobbyResultActivity : Activity(),
 
     override fun onCreate(savedInstanceState : Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.hobby_result)
+        setContentView(R.layout.hobby_list)
 
         hobbies = matchHobbies()
 

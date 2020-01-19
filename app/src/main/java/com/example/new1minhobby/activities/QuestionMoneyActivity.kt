@@ -20,7 +20,7 @@ class QuestionMoneyActivity() : Activity() {
         val type = bundle?.get("type").toString()
         val time = bundle?.get("time").toString()
 
-        val intent = Intent(this, HobbyResultActivity::class.java)
+        val intent = Intent(this, HobbyListActivity::class.java)
         intent.putExtra("price", button?.tag.toString())
         intent.putExtra("type", type)
         intent.putExtra("time", time)
