@@ -6,27 +6,25 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true">
+        android:supportsRtl="true"
+        android:theme="@style/appTheme">
+
         <activity
             android:name=".activities.QuestionTypeActivity"
-            android:label="@string/app_name">
+            android:theme="@style/splashScreenTheme">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".activities.QuestionTimeActivity"
-            android:label="@string/app_name">
-        </activity>
-        <activity android:name=".activities.QuestionMoneyActivity"
-            android:label="@string/app_name">
-        </activity>
-        <activity android:name=".activities.HobbyResultActivity"
-            android:label="@string/app_name">
-        </activity>
-        <activity android:name=".activities.HobbyDetailActivity"
-            android:label="@string/app_name">
-        </activity>
+
+        <activity android:name=".activities.QuestionTimeActivity"/>
+
+        <activity android:name=".activities.QuestionMoneyActivity"/>
+
+        <activity android:name=".activities.HobbyResultActivity"/>
+
+        <activity android:name=".activities.HobbyDetailActivity"/>
     </application>
 </manifest>

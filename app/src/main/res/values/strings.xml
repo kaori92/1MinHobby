@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Find Your Hobby</string>
+    <string name="app_name">My Hobby</string>
     <string name="learn_more">Learn more &#8594;</string>
+    <string name="benefits">BENEFITS</string>
 </resources>

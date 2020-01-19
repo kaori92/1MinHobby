@@ -7,8 +7,9 @@ import android.view.View
 import android.widget.Button
 import com.example.new1minhobby.R
 
-class QuestionTypeActivity() : Activity() {
+class QuestionTypeActivity : Activity() {
     protected override fun onCreate(savedInstanceState : Bundle?) {
+        setTheme(R.style.splashScreenTheme)
         super<Activity>.onCreate(savedInstanceState)
         setContentView(R.layout.question_type)
     }
