@@ -1,6 +1,5 @@
  - dokonczyc opisy i benefity hobby
  - podzielic pierwszy ekran z rodzajami hobby na kilka róznych np. w domu, poza domem, inne
- - zmienic kolor "Learn more" i "benefits" na ten co podał M na fb
  - splash screen na dluzej?
  - (detail) zmniejszyc odleglosc miedzy tytulem, a opise i miedzy opisem, a benefitami
- - ew. animacje - przejscia miedzy aktywnosciami (ale to ostatecznie)
+  - dodac drop shadow pod kafelki

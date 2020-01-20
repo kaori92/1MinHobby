@@ -3,9 +3,11 @@
     <dimen name="padding">@dimen/_10sdp</dimen>
     <dimen name="text_size">@dimen/_18sdp</dimen>
     <dimen name="margin">@dimen/_15sdp</dimen>
+    <dimen name="small_margin">@dimen/_8sdp</dimen>
     <dimen name="elevation">@dimen/_40sdp</dimen>
     <dimen name="smaller_font_size">@dimen/_16sdp</dimen>
     <dimen name="larger_font_size">@dimen/_24sdp</dimen>
     <dimen name="zero_size">0dp</dimen>
+    <dimen name="shadow_alpha">0.7</dimen>
     <dimen name="corner_radius">@dimen/_20sdp</dimen>
 </resources>

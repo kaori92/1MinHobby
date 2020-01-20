@@ -32,6 +32,17 @@
         <item name="android:textColor">@color/colorDarkBlue</item>
     </style>
 
+    <style name="ButtonStyle">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorDarkBlue</item>
+        <item name="android:fontFamily">@font/didact_gothic</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:onClick">passValue</item>
+        <item name="android:background">@drawable/button_style</item>
+    </style>
+
     <style
         name="appTheme"
         parent="@android:style/Theme.DeviceDefault.NoActionBar">
@@ -42,5 +53,15 @@
         parent="@android:style/Theme.DeviceDefault.NoActionBar">
 
         <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="CardViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/small_margin</item>
+        <item name="android:layout_marginRight">@dimen/small_margin</item>
+        <item name="cardUseCompatPadding">true</item>
+        <item name="cardBackgroundColor">@android:color/white</item>
+        <item name="cardCornerRadius">@dimen/corner_radius</item>
     </style>
 </resources>
