@@ -14,7 +14,11 @@ class QuestionTypeActivity : Activity() {
         super<Activity>.onCreate(savedInstanceState)
 
         MobileAds.initialize(this) {}
+        startAnimation()
         setContentView(R.layout.question_type)
+    }
+
+    fun startAnimation(){
     }
 
     fun passValue(view: View) {

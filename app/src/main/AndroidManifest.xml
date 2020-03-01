@@ -13,15 +13,14 @@
             android:name="com.google.android.gms.ads.APPLICATION_ID"
             android:value="ca-app-pub-3229994798266312~2184074703"/>
 
-        <activity
-            android:name=".activities.QuestionTypeActivity"
-            android:theme="@style/splashScreenTheme">
-
+        <activity android:name=".activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".activities.QuestionTypeActivity"/>
 
         <activity android:name=".activities.QuestionTimeActivity"/>
 
