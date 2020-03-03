@@ -3,4 +3,15 @@
     <string name="app_name">My Hobby</string>
     <string name="learn_more">Learn more &#8594;</string>
     <string name="benefits">BENEFITS</string>
+    <string name="atypical_hobby">Atypical hobby</string>
+    <string name="hobby_for_adrenaline">Hobby for adrenaline junkies</string>
+    <string name="adventurous_hobby">Adventurous hobby</string>
+    <string name="occasional_or_seasonal_hobby">Occasional or seasonal hobby</string>
+    <string name="hobby_training_your_brain">Hobby training your brain</string>
+    <string name="what_type_of_hobby_sounds_interesting">What type of hobby sounds interesting?</string>
+    <string name="simple_everyday_hobby">Simple everyday hobby</string>
+    <string name="practical_home_hobby">Practical home hobby</string>
+    <string name="sport_hobby">Sport hobby</string>
+    <string name="creative_hobby_with_a_physical_result">Creative hobby with a physical result</string>
+    <string name="creative_hobby_with_non_physical_result">Creative hobby with non-physical result</string>
 </resources>

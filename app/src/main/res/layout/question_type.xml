@@ -2,103 +2,93 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fillViewport="true"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    android:fillViewport="true">
 
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <LinearLayout
-            android:showDividers="middle"
-            android:divider="@drawable/empty_tall_divider"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="@dimen/margin"
-            android:orientation="vertical">
+            android:divider="@drawable/empty_tall_divider"
+            android:orientation="vertical"
+            android:showDividers="middle">
 
             <TextView
                 style="@style/TextViewStyle"
-                android:text="What type of hobby sounds interesting?"
-            />
+                android:text="@string/what_type_of_hobby_sounds_interesting" />
 
             <Button
                 android:id="@+id/simpleButton"
                 style="@style/ButtonStyle"
-                android:tag="Simple everyday hobby"
-                android:text="Simple everyday hobby" />
+                android:tag="@string/simple_everyday_hobby"
+                android:text="@string/simple_everyday_hobby" />
 
             <Button
                 android:id="@+id/practicalButton"
                 style="@style/ButtonStyle"
-                android:tag="Practical home hobby"
-                android:text="Practical home hobby"
-                />
+                android:tag="@string/practical_home_hobby"
+                android:text="@string/practical_home_hobby" />
 
             <Button
                 android:id="@+id/sportsButton"
                 style="@style/ButtonStyle"
-                android:tag="Sport hobby"
-                android:text="Sport hobby"
-                />
+                android:tag="@string/sport_hobby"
+                android:text="@string/sport_hobby" />
 
             <Button
                 android:id="@+id/creativePhysicalButton"
                 style="@style/ButtonStyle"
-                android:tag="Creative hobby with a physical result"
-                android:text="Creative hobby with a physical result" />
+                android:tag="@string/creative_hobby_with_a_physical_result"
+                android:text="@string/creative_hobby_with_a_physical_result" />
 
             <Button
                 android:id="@+id/creativeNonphysicalButton"
                 style="@style/ButtonStyle"
-                android:tag="Creative hobby with non-physical result"
-                android:text="Creative hobby with non-physical result"
-                />
+                android:tag="@string/creative_hobby_with_non_physical_result"
+                android:text="@string/creative_hobby_with_non_physical_result" />
 
             <Button
                 android:id="@+id/brainButton"
                 style="@style/ButtonStyle"
-                android:tag="Hobby training your brain"
-                android:text="Hobby training your brain"
-                />
+                android:tag="@string/hobby_training_your_brain"
+                android:text="@string/hobby_training_your_brain" />
 
             <Button
                 android:id="@+id/seasonalButton"
                 style="@style/ButtonStyle"
-                android:tag="Occasional or seasonal hobby"
-                android:text="Occasional or seasonal hobby"
-/>
+                android:tag="@string/occasional_or_seasonal_hobby"
+                android:text="@string/occasional_or_seasonal_hobby" />
 
             <Button
                 android:id="@+id/adventureButton"
                 style="@style/ButtonStyle"
-                android:tag="Adventurous hobby"
-                android:text="Adventurous hobby"
-                />
+                android:tag="@string/adventurous_hobby"
+                android:text="@string/adventurous_hobby" />
 
             <Button
                 android:id="@+id/adrenalineButton"
                 style="@style/ButtonStyle"
-                android:tag="Hobby for adrenaline junkies"
-                android:text="Hobby for adrenaline junkies"
-                />
+                android:tag="@string/hobby_for_adrenaline"
+                android:text="@string/hobby_for_adrenaline" />
 
             <Button
                 android:id="@+id/atypicalButton"
                 style="@style/ButtonStyle"
-                android:tag="Atypical hobby"
-                android:text="Atypical hobby" />
+                android:tag="@string/atypical_hobby"
+                android:text="@string/atypical_hobby" />
         </LinearLayout>
 
-        <com.google.android.gms.ads.AdView
-            xmlns:ads="http://schemas.android.com/apk/res-auto"
+        <com.google.android.gms.ads.AdView xmlns:ads="http://schemas.android.com/apk/res-auto"
             android:id="@+id/adView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom"
             ads:adSize="BANNER"
-            ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
-        </com.google.android.gms.ads.AdView>
+            ads:adUnitId="ca-app-pub-3940256099942544/6300978111" />
         <!--            TODO PODMIENIC AD UNIT ID !!!-->
 
     </FrameLayout>

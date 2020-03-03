@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "126294043520",
+    "firebase_url": "https://myhobby-4fda1.firebaseio.com",
+    "project_id": "myhobby-4fda1",
+    "storage_bucket": "myhobby-4fda1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:126294043520:android:827389c68aa523dbba6f65",
+        "android_client_info": {
+          "package_name": "com.example.new1minhobby"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "126294043520-bbksv5kkf42o9do0i7qao15cglrl8unn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDgPT_dMdngrMvtmIltTZaX8E5gVvjuUg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "126294043520-bbksv5kkf42o9do0i7qao15cglrl8unn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
