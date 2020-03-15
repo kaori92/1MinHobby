@@ -4,11 +4,14 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.LinearLayout
 import com.example.new1minhobby.R
 
 class QuestionTimeActivity() : AdActivity() {
     protected override fun onCreate(savedInstanceState : Bundle?) {
         setContentView(R.layout.question_time)
+        adViewContainer = findViewById<LinearLayout>(R.id.adViewContainer)
+
         super.onCreate(savedInstanceState)
     }
 
@@ -18,7 +21,7 @@ class QuestionTimeActivity() : AdActivity() {
         val type = bundle?.get("type")
 
         val intent = Intent(this, QuestionMoneyActivity::class.java)
-        intent.putExtra("time", button?.getTag().toString())
+        intent.putExtra("time", button?.tag.toString())
         intent.putExtra("type", type.toString())
         startActivity(intent)
     }

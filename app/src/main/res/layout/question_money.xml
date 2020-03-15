@@ -10,6 +10,7 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
+            android:id="@+id/adViewContainer"
             android:showDividers="middle"
             android:divider="@drawable/empty_tall_divider"
             android:layout_width="match_parent"
@@ -42,11 +43,6 @@
                 android:tag="high"
                 android:text="Any amount"
                 />
-
-            <include
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                layout="@layout/ad_view" />
         </LinearLayout>
 
     </FrameLayout>

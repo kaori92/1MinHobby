@@ -16,6 +16,7 @@
             android:layout_marginBottom="@dimen/margin">
 
             <LinearLayout
+                android:id="@+id/adViewContainer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/small_margin"
@@ -62,10 +63,6 @@
                     android:layout_marginBottom="@dimen/margin"
                     tools:text=" - practical" />
 
-                <include
-                    layout="@layout/ad_view"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>

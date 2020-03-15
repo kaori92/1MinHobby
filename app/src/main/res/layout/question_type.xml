@@ -10,6 +10,7 @@
         android:layout_height="wrap_content">
 
         <LinearLayout
+            android:id="@+id/adViewContainer"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_margin="@dimen/margin"
@@ -80,11 +81,6 @@
                 style="@style/ButtonStyle"
                 android:tag="@string/atypical_hobby"
                 android:text="@string/atypical_hobby" />
-
-            <include
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                layout="@layout/ad_view" />
         </LinearLayout>
 
     </FrameLayout>

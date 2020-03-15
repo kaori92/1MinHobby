@@ -4,12 +4,14 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.LinearLayout
 import com.example.new1minhobby.R
 
 class QuestionTypeActivity : AdActivity() {
     override fun onCreate(savedInstanceState : Bundle?) {
         setTheme(R.style.splashScreenTheme)
         setContentView(R.layout.question_type)
+        adViewContainer = findViewById<LinearLayout>(R.id.adViewContainer)
         super.onCreate(savedInstanceState)
         startAnimation()
     }

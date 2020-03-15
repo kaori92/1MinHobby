@@ -2,6 +2,7 @@ package com.example.new1minhobby.activities
 
 import android.os.Bundle
 import android.util.Log
+import android.widget.LinearLayout
 import android.widget.TextView
 import com.example.new1minhobby.R
 import com.example.new1minhobby.data.Hobby
@@ -11,6 +12,7 @@ class HobbyDetailActivity: AdActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         setContentView(R.layout.hobby_detail)
+        adViewContainer = findViewById<LinearLayout>(R.id.adViewContainer)
         super.onCreate(savedInstanceState)
 
         val bundle: Bundle? = intent.extras
