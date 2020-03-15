@@ -14,4 +14,10 @@
     <string name="sport_hobby">Sport hobby</string>
     <string name="creative_hobby_with_a_physical_result">Creative hobby with a physical result</string>
     <string name="creative_hobby_with_non_physical_result">Creative hobby with non-physical result</string>
+    <string name="how_much_time_at_once_do_you_have_for_hobbies">How much time at once do you have for hobbies?</string>
+    <string name="little_less_than_an_hour">Little: less than an hour</string>
+    <string name="medium_about_an_hour">Medium: about an hour</string>
+    <string name="a_lot_more_than_an_hour">A lot: more than an hour</string>
+    <string name="ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+
 </resources>

@@ -1,16 +1,15 @@
 package com.example.new1minhobby.activities
 
-import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import com.example.new1minhobby.R
 
-class QuestionTimeActivity() : Activity() {
+class QuestionTimeActivity() : AdActivity() {
     protected override fun onCreate(savedInstanceState : Bundle?) {
-        super<Activity>.onCreate(savedInstanceState)
         setContentView(R.layout.question_time)
+        super.onCreate(savedInstanceState)
     }
 
     fun passValue(view: View) {

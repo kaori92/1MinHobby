@@ -1,0 +1,3 @@
+ - podmienic id w adview
+ - sprawdzic jak wyglada na tablecie
+ - dopracowac animacje (splash screen)

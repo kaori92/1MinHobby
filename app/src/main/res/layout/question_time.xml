@@ -41,6 +41,10 @@
                 android:tag="high"
                 android:text="A lot: more than an hour"
                 />
+            <include
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/ad_view" />
         </LinearLayout>
     </FrameLayout>
 </ScrollView>

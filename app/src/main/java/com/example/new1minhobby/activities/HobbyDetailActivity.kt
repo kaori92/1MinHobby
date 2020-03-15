@@ -1,6 +1,5 @@
 package com.example.new1minhobby.activities
 
-import android.app.Activity
 import android.os.Bundle
 import android.util.Log
 import android.widget.TextView
@@ -8,11 +7,11 @@ import com.example.new1minhobby.R
 import com.example.new1minhobby.data.Hobby
 import com.google.gson.Gson
 
-class HobbyDetailActivity: Activity() {
+class HobbyDetailActivity: AdActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
         setContentView(R.layout.hobby_detail)
+        super.onCreate(savedInstanceState)
 
         val bundle: Bundle? = intent.extras
         val hobby = Gson().fromJson(bundle?.get("hobby").toString(), Hobby::class.java)
@@ -28,10 +27,12 @@ class HobbyDetailActivity: Activity() {
         descriptionTextView.text = hobby.description
         val benefits = hobby.getBenefits()
 
-        if(benefits.isNotEmpty()){
+        if(benefits.isNotEmpty() && benefits.size >= 3){
             benefit1TextView.text = " - " + benefits[0]
             benefit2TextView.text = " - " + benefits[1]
             benefit3TextView.text = " - " + benefits[2]
+        } else {
+            Log.e("TAG123", "hobby $hobby has less than 3 benefits! Benefits: $benefits")
         }
     }
 }
