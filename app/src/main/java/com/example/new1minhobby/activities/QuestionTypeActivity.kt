@@ -9,14 +9,9 @@ import com.example.new1minhobby.R
 
 class QuestionTypeActivity : AdActivity() {
     override fun onCreate(savedInstanceState : Bundle?) {
-        setTheme(R.style.splashScreenTheme)
         setContentView(R.layout.question_type)
         adViewContainer = findViewById<LinearLayout>(R.id.adViewContainer)
         super.onCreate(savedInstanceState)
-        startAnimation()
-    }
-
-    private fun startAnimation(){
     }
 
     fun passValue(view: View) {
@@ -25,4 +20,10 @@ class QuestionTypeActivity : AdActivity() {
         intent.putExtra("type", button?.tag.toString())
         startActivity(intent)
     }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        moveTaskToBack(true)
+    }
+
 }

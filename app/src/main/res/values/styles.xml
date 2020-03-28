@@ -6,6 +6,16 @@
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="TextViewStartStyle">
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:fontFamily">@font/didact_gothic</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">@dimen/margin</item>
         <item name="android:gravity">start</item>
         <item name="android:textColor">@android:color/white</item>
     </style>
@@ -43,23 +53,23 @@
         <item name="android:background">@drawable/button_style</item>
     </style>
 
+    <style name="LinearLayoutStyle">
+        <item name="android:layout_width">@dimen/max_width</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">@dimen/margin</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:divider">@drawable/empty_tall_divider</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:showDividers">middle</item>
+    </style>
+
     <style
         name="appTheme"
         parent="@android:style/Theme.DeviceDefault.NoActionBar">
     </style>
 
-    <style
-        name="splashScreenTheme"
-        parent="@android:style/Theme.DeviceDefault.NoActionBar">
-
-<!--        <item name="android:windowBackground">@drawable/splash_screen_animation</item>-->
-    </style>
-
     <style name="CardViewStyle">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">@dimen/small_margin</item>
-        <item name="android:layout_marginRight">@dimen/small_margin</item>
+        <item name="android:layout_gravity">center_horizontal</item>
         <item name="cardUseCompatPadding">true</item>
         <item name="cardBackgroundColor">@android:color/white</item>
         <item name="cardCornerRadius">@dimen/corner_radius</item>

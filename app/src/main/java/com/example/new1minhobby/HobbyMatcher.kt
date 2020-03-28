@@ -18,13 +18,13 @@ class HobbyMatcher(type: String, time: String, price: String) {
             it.category == category && it.time == time && it.price == price
         }
 
-        if(result.isEmpty()){
+        if(result.isEmpty() || result.size < MATCHED_HOBBIES_MIN){
             result =  allHobbies.filter {
                 it.category == category && (it.time == time || it.price == price)
             }
         }
 
-        if(result.isEmpty()){
+        if(result.isEmpty() || result.size < MATCHED_HOBBIES_MIN){
             result =  allHobbies.filter {
                 it.category == category || it.time == time || it.price == price
             }

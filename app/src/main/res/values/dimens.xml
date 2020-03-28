@@ -1,13 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <integer name="custom_match_parent">-1</integer>
+    <integer name="custom_wrap_content">-2</integer>
+
     <dimen name="padding">@dimen/_10sdp</dimen>
-    <dimen name="text_size">@dimen/_18sdp</dimen>
+    <dimen name="text_size">18sp</dimen>
     <dimen name="margin">@dimen/_15sdp</dimen>
     <dimen name="small_margin">@dimen/_8sdp</dimen>
     <dimen name="elevation">@dimen/_40sdp</dimen>
-    <dimen name="smaller_font_size">@dimen/_16sdp</dimen>
-    <dimen name="larger_font_size">@dimen/_24sdp</dimen>
+    <dimen name="smaller_font_size">16sp</dimen>
+    <dimen name="larger_font_size">20sp</dimen>
     <dimen name="zero_size">0dp</dimen>
     <dimen name="shadow_alpha">0.7</dimen>
     <dimen name="corner_radius">@dimen/_20sdp</dimen>
+    <dimen
+        name="card_view_width"
+        tools:ignore="ReferenceType">
+        @integer/custom_match_parent
+    </dimen>
+    <dimen
+        name="max_width"
+        tools:ignore="ReferenceType">
+        @integer/custom_match_parent
+    </dimen>
 </resources>

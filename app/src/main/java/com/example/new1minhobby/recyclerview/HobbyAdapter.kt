@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.RecyclerView.ViewHolder
 import com.example.new1minhobby.activities.HobbyListActivity
@@ -13,13 +14,12 @@ import com.example.new1minhobby.data.Hobby
 
 class HobbyAdapter internal constructor(
     context: HobbyListActivity,
-    data: List<Hobby>
+    hobbies: List<Hobby>
 ) :
     RecyclerView.Adapter<ViewHolder>() {
-    private val data: List<Hobby> = data
+    private val hobbies: List<Hobby> = hobbies
     private val inflater: LayoutInflater = LayoutInflater.from(context)
-    private var clickListener: ItemClickListener? = null
-    val activity = context
+    private val activity = context
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view: View = inflater.inflate(R.layout.hobby_list_item, parent, false)
@@ -27,28 +27,27 @@ class HobbyAdapter internal constructor(
     }
 
     override fun getItemCount(): Int {
-        return data.size
+        return hobbies.size
     }
 
     inner class MyViewHolder constructor(itemView: View, context: HobbyListActivity) : ViewHolder(itemView),
         View.OnClickListener {
-
-        var myTextView: TextView
-        val innerContext = context
+        private var cardView = itemView.findViewById<CardView>(R.id.card_view)
+        var myTextView: TextView = cardView.findViewById(R.id.hobby_text_view)
+        private val innerContext = context
 
         override fun onClick(view: View?) {
             Log.d("TAG12345", "textview ${myTextView.text} view $view position ${getAdapterPosition()}")
-            innerContext.onItemClick(getItem(getAdapterPosition()))
+            innerContext.onItemClick(getItem(adapterPosition))
         }
 
         init {
-            myTextView = itemView.findViewById(R.id.hobby_text_view)
             itemView.setOnClickListener(this)
         }
     }
 
     fun getItem(id: Int): Hobby {
-        return data[id]
+        return hobbies[id]
     }
 
     interface ItemClickListener {
@@ -56,7 +55,7 @@ class HobbyAdapter internal constructor(
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        val hobby = data[position]
+        val hobby = hobbies[position]
         (holder as MyViewHolder).myTextView.text = hobby.name.toUpperCase()
     }
 }

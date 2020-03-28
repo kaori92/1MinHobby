@@ -8,15 +8,4 @@
         <item name="android:spotShadowAlpha">@dimen/shadow_alpha</item>
     </style>
 
-    <style name="CardViewStyle">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:layout_marginLeft">@dimen/small_margin</item>
-        <item name="android:layout_marginRight">@dimen/small_margin</item>
-        <item name="cardUseCompatPadding">true</item>
-        <item name="android:elevation">@dimen/elevation</item>
-        <item name="cardBackgroundColor">@android:color/white</item>
-        <item name="cardCornerRadius">@dimen/corner_radius</item>
-    </style>
-
 </resources>

@@ -1,3 +1,2 @@
- - podmienic id w adview
+ - podmienic id w adview : as unit id ca-app-pub-3229994798266312/3030236601
  - sprawdzic jak wyglada na tablecie
- - dopracowac animacje (splash screen)

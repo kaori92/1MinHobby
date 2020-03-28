@@ -12,8 +12,13 @@
 
         <androidx.cardview.widget.CardView
             style="@style/CardViewStyle"
+            android:layout_width="@dimen/card_view_width"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/small_margin"
             android:layout_marginTop="@dimen/margin"
-            android:layout_marginBottom="@dimen/margin">
+            android:layout_marginRight="@dimen/small_margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:maxWidth="@dimen/max_width">
 
             <LinearLayout
                 android:id="@+id/adViewContainer"
@@ -30,7 +35,7 @@
 
                 <TextView
                     android:id="@+id/description_text_view"
-                    style="@style/TextViewStyle"
+                    style="@style/TextViewStartStyle"
                     android:layout_marginTop="@dimen/zero_size"
                     android:layout_marginBottom="@dimen/zero_size"
                     android:textColor="@color/colorDarkBlue"

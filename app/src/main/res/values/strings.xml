@@ -8,7 +8,7 @@
     <string name="adventurous_hobby">Adventurous hobby</string>
     <string name="occasional_or_seasonal_hobby">Occasional or seasonal hobby</string>
     <string name="hobby_training_your_brain">Hobby training your brain</string>
-    <string name="what_type_of_hobby_sounds_interesting">What type of hobby sounds interesting?</string>
+    <string name="what_type_of_hobby_sounds_interesting">Which type of hobby sounds interesting?</string>
     <string name="simple_everyday_hobby">Simple everyday hobby</string>
     <string name="practical_home_hobby">Practical home hobby</string>
     <string name="sport_hobby">Sport hobby</string>
@@ -18,6 +18,7 @@
     <string name="little_less_than_an_hour">Little: less than an hour</string>
     <string name="medium_about_an_hour">Medium: about an hour</string>
     <string name="a_lot_more_than_an_hour">A lot: more than an hour</string>
-    <string name="ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="ad_unit_id">ca-app-pub-3229994798266312/3030236601</string>
+    <string name="we_have_chosen_for_you">We have chosen for you:</string>
 
 </resources>
